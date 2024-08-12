@@ -1,0 +1,6 @@
+<RunSettings>
+  <TestRunParameters>
+    <Parameter name="browser" value="chrome" />
+    <Parameter name="mobileEmulation" value="" />
+  </TestRunParameters>
+</RunSettings>

@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsTestProject>true</IsTestProject>
+    <IsPackable>false</IsPackable>
+    <Company>SSFCU</Company>
+    <Copyright>© SSFCU 2024</Copyright>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Remove="C:\Users\a30594\.nuget\packages\basepage2022\3.0.23\contentFiles\any\net7.0\testhost.dll" />
+    <Content Remove="C:\Users\a30594\.nuget\packages\basepage2022\3.0.23\contentFiles\any\net7.0\testhost.exe" />
+    <Content Remove="C:\Users\a30594\.nuget\packages\basepage2022\3.0.25\contentFiles\any\net7.0\testhost.dll" />
+    <Content Remove="C:\Users\a30594\.nuget\packages\basepage2022\3.0.25\contentFiles\any\net7.0\testhost.exe" />
+    <Content Remove="C:\Users\a30594\.nuget\packages\microsoft.testplatform.testhost\17.5.0\build\netcoreapp3.1\x64\testhost.dll" />
+    <Content Remove="C:\Users\a30594\.nuget\packages\microsoft.testplatform.testhost\17.5.0\build\netcoreapp3.1\x64\testhost.exe" />
+    <Content Remove="C:\Users\a30594\.nuget\packages\verbs2022\3.0.4\contentFiles\any\net7.0\testhost.dll" />
+    <Content Remove="C:\Users\a30594\.nuget\packages\verbs2022\3.0.4\contentFiles\any\net7.0\testhost.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+    <PackageReference Include="FileHelpers" Version="3.5.2" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+    <PackageReference Include="Selenium.Support" Version="4.17.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.17.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="appsettings.general.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="appsettings.uat2.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="local.runsettings">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
